@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  color: white;
+  font-family: "Wellfleet", monospace;
+}
+
+.container {
+  width: auto;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  background-color: rgba(7, 131, 180, 0.425);
+}
+
+.title-bar {
+  cursor: no-drop;
+}
+.menu-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-bar p {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.menu-bar p:hover {
+  background-color: aliceblue;
+  color: rgb(7, 131, 180);
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(https://e0.pxfuel.com/wallpapers/846/344/desktop-wallpaper-portfolio.jpg)
+    center;
+  background-size: cover;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+}
+.introContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  font-size: 1.8rem;
+  gap: 5px;
+}
+
+.intro {
+  border: 3px solid greenyellow;
+  border-radius: 15px;
+  padding: 10px;
+  width: 500px;
+  height: 50px;
+  text-align: center;
+  cursor: pointer;
+  transition: width 2s, height 2s;
+}
+
+.intro:hover {
+  width: 800px;
+  height: 150px;
+}
+
+.msgBox {
+  position: relative;
+  overflow: visible;
+}
+.msg {
+  font-size: 0.75rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateY(120%);
+  color: #080808;
+  padding: 3px;
+  background-color: aqua;
+  border-radius: 10px 0 0 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 5px;
+    font-size: 0.8rem;
+    height: 40px;
+  }
+}
